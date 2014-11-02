@@ -6,11 +6,12 @@ import (
 	"io/ioutil"
 	"encoding/json"
 	"os"
+	"github.com/parnurzeal/gorequest"
 )
 
 var _ = json.NewEncoder(os.Stdout)
 
-func main() {
+func httpPlain() {
 	resp, err := http.Get("http://ip.jsontest.com/")
 
 	if err != nil {
@@ -19,7 +20,6 @@ func main() {
 
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
-
 	if err != nil {
 		fmt.Println("Error reading body ", err)
 	}
@@ -37,6 +37,19 @@ func main() {
 
 	ip := data["ip"].(string)
 	fmt.Println("Json: ", string(ip))
+}
 
+func httpGoRequest() {
+	request := gorequest.New()
+
+	resp, body, errs := request.Get("https://ip.jsontest.com").End()
+	fmt.Println(resp)
+	fmt.Println(body)
+	fmt.Println(errs)
+}
+
+func main() {
+	//	httpPlain()
+	httpGoRequest()
 
 }

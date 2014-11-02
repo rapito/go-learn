@@ -26,7 +26,7 @@ func main() {
 	// First we'll look at encoding basic data types to
 	// JSON strings. Here are some examples for atomic
 	// values.
-	bolB, _ := json.Marshal(true)
+	bolB, _ := json.Marshal(nil)
 	fmt.Println(string(bolB))
 
 	intB, _ := json.Marshal(1)
