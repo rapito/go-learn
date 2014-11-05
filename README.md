@@ -12,3 +12,4 @@ Index
 * **json**: Examples for using the json package.
 * **logger**: Examples for using the logger package.
 * **newmath**: Package resulting from the Go [How to Write Go Code](https://golang.org/doc/code.html).
+* **[working-with-go](https://github.com/mkaz/working-with-go)**: A set of example golang code to start learning Go by [mkaz](http://github.com/mkaz/).
