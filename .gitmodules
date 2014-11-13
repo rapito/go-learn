@@ -1,3 +1,6 @@
 [submodule "working-with-go"]
 	path = working-with-go
 	url = https://github.com/mkaz/working-with-go
+[submodule "go-json-rest-examples"]
+	path = go-json-rest-examples
+	url = http://github.com/ant0ine/go-json-rest-examples
