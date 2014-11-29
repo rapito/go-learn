@@ -14,3 +14,4 @@ Index
 * **newmath**: Package resulting from the Go [How to Write Go Code](https://golang.org/doc/code.html).
 * **[working-with-go](https://github.com/mkaz/working-with-go)**: A set of example golang code to start learning Go by [mkaz](http://github.com/mkaz/).
 * **[go-json-rest](https://github.com/ant0ine/go-json-rest)**: A set of example golang code to use go-json-rest by [ant0ine](http://github.com/ant0ine/).
+* **mgo**: MongoDB Connection Example codes using mgo. [go-mgo](https://github.com/go-mgo/mgo/).
